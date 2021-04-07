@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import useRouter from 'use-react-router';
-import { ArrowRight } from 'react-bootstrap-icons';
 
 import { getProductById, addToCartById } from '../../../states/shop/action';
 
@@ -21,9 +20,11 @@ const Component = props => {
 		<>
 			<div>Nama Produk: {product.name} </div>
 			<button onClick={onAddToCart}>Tambah Ke Keranjang</button>
+			<i className="fa fa-address-book" aria-hidden="true"></i>
+			<i className="fa fa-bath" aria-hidden="true"></i>
 
 			<h1>{product.qty}</h1>
-			<ArrowRight />
+
 			<img src={product.image} alt="" />
 		</>
 	);

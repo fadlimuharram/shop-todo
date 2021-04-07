@@ -17,6 +17,7 @@ import { ProtectedRoute } from './pages/auth/ProtectedRoute';
 
 import { ListShop } from './pages/shop/list';
 import { DetailShop } from './pages/shop/detail';
+import { Halaman1 } from './pages/shop/halaman1';
 
 function App() {
 	return (
@@ -33,6 +34,7 @@ function App() {
 
 				<Route component={ListShop} path="/shop" exact />
 				<Route component={DetailShop} path="/shop/:id" />
+				<Route component={Halaman1} path="/contoh-halaman-1" />
 			</Switch>
 		</Router>
 	);
